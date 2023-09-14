@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://)
+- Solution URL: [Check out the solution Page](https://www.frontendmentor.io/solutions/nft-preview-card-using-html-css-animation-and-flex-box-H7jJAWyv0F)
+- Live Site URL: [Live site URL](https://nft-preview-card-192.netlify.app/)
 
 ## My process
 
