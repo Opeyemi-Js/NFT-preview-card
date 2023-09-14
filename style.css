@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Neutral */
+    --main_bg:#0d192b;
+    --token_wrapper:#14253d;
+    --line:#2f415b;
+    --white:#ffff;
+    /* Primary Color */
+    --soft_blue:#8bacda;
+    --Cyan:#00fff7;
+}
+body{
+    /* Units are in em and rem */
+    background-color: var(--main_bg);
+    font-family: 'Outlet', sans-serif;
+}
+.center{
+    max-width: 75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9.34em auto;
+}
+.wrapper{
+    max-width: 21.5em;
+    height: auto;
+    background-color: var(--token_wrapper);
+    box-shadow: .63em .19em 1.06em #0c1729bf;;
+    border-radius: 1em;
+    padding: .6em;
+}
+.img_container{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+}
+.img_container img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 1.5em;
+   padding: .63em;
+   display: block;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    background-color: var(--Cyan);
+    opacity: .5;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: none;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/icon-view.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: none;
+}
+.img_container:hover .overlay::before, 
+.img_container:hover .overlay::after{
+    display: block;
+    animation: scaling .5s ease-in-out forwards;
+}
+.listing_info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .94em 0;
+    border-bottom: .063em solid var(--line);
+
+}
+.listing_price,
+.listing_date{
+    display:flex;
+    gap: 0.34em;
+    padding: 0.94em 0;
+}
+.creator_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.31em 0 0.94em 0;
+}
+.creator_info .creator_pic img{
+   width: 2em;
+   margin-left: -3.13em;
+   border: .063em solid var(--white);
+   border-radius: 50% ;
+}
+.creator_name{
+    color: var(--white);
+}
+.token_info{
+    padding: .6em 1em;
+}
+h1{
+    font-weight: 600;
+    color: var(--white);
+    margin: 1em 0;
+}
+h1:hover,
+.creator_name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+p{
+    font-size: 1.13em;
+    color: var(--soft_blue);
+    font-weight: 300;
+}
+.cyan{
+    color: var(--Cyan);
+    font-weight: 400;
+}
+.about_token{
+    line-height: 1.7;
+}
+@keyframes scaling{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
