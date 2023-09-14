@@ -28,12 +28,12 @@ Users should be able to:
 - See hover states for interactive elements.
 
 ### Screenshot
-![My Desktop Screenshot](images\screenshot.PNG)
+![My Desktop Screenshot](./images/screenshot.PNG)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://)
 
 ## My process
 
@@ -93,8 +93,10 @@ Currently, i'v not yet mastered the CSS animatitions, i will continue to learn m
 
 ## Author
 
-- Twitter - [@opeyemi_Js](https://www.twitter.com/yourusername)
+- Twitter - [@opeyemi_Js](https://www.twitter.com/opeyemi_Js)
 
 ## Acknowledgments
 
 I give credits to Saad Hisham, his solution to this same challenge really helped out.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b1b84607-f021-466a-9470-5f7ed2020faf/deploy-status)](https://app.netlify.com/sites/nft-preview-card-192/deploys)
